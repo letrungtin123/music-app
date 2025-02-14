@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+:root {
+  --font-family: "Courgette", serif;
+  --btn-color: #d84315; /* Màu vàng nổi bật */
+  --background-color1: #1e1e1e; /* Nền tối xám đậm */
+  --background-color2: #292929; /* Nền phụ tối hơn */
+  --background-color3: linear-gradient(
+    to right,
+    #ff6f00,
+    #d84315
+  ); /* Gradient cam đậm */
+}
+
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color1);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper-play {
+  background-color: var(--background-color2);
+  width: 90%;
+  max-width: 300px;
+  border-radius: 38px;
+  -webkit-border-radius: 38px;
+  -moz-border-radius: 38px;
+  -ms-border-radius: 38px;
+  -o-border-radius: 38px;
+  box-shadow: 0px 0px 10px #3a3a3a;
+  padding: 16px;
+}
+
+.song-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player .controls .btn-control,
+.song-header .btn-head {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--background-color2);
+  box-shadow: 5px 5px 10px #111, -5px -5px 10px #3a3a3a;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btn-color);
+}
+
+.player .image-area img {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 6px solid var(--background-color1);
+  margin: 24px auto;
+  display: block;
+  box-shadow: 5px 5px 10px #111, -5px -5px 10px #3a3a3a;
+}
+
+.player .song-details .name {
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--btn-color);
+}
+
+.player .song-details .artists {
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0 20px;
+  color: #b0b0b0;
+}
+
+.player .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 32px 14px 20px;
+}
+
+.player .controls .play-pause {
+  height: 64px;
+  width: 64px;
+  background-image: var(--background-color3);
+  color: #fff;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.title {
+  color: #b0b0b0;
+}
