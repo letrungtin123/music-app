@@ -44,6 +44,19 @@
           <h3 class="artists">The Weeknd</h3>
         </div>
 
+        <!-- audio control -->
+         <div class="audio-c">
+          <div class="progress-area">
+            <div class="progress-bar">
+              <audio src="" type="audio/mp3" id="m-audio"></audio>
+            </div>
+          </div>
+          <div class="song-timer">
+            <div class="current-time">0:00</div>
+            <div class="max-duration">0:00</div>
+          </div>
+         </div>
+
     
         <div class="controls">
           <button class="btn-control btn-prev">
@@ -57,11 +70,47 @@
           </button>
         </div>
       </div>
+      <!-- music list -->
+      <div class="music-list">
+        <div class="header">
+          <span>Playing now</span>
+          <i class="fa-solid fa-xmark" id="close"></i>
+        </div>
+
+        <ul>
+          <li class="playing">
+            <div class="row">
+              <span>Safari</span>
+              <p class="artists">Serena</p>
+            </div>
+
+            <span class="timer">02:00</span>
+          </li>
+          <li class="">
+            <div class="row">
+              <span>Safari</span>
+              <p class="artists">Serena</p>
+            </div>
+
+            <span class="timer">02:00</span>
+          </li>
+          <li class="">
+            <div class="row">
+              <span>Safari</span>
+              <p class="artists">Serena</p>
+            </div>
+
+            <span class="timer">02:00</span>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </div>
   </div>
 </body>
 
+<!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
